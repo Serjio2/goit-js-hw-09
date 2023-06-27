@@ -18,6 +18,7 @@ function startColorChange() {
         document.body.style.backgroundColor = getRandomHexColor();
     }, 1000);
     buttonStartColorsChangeEl.disabled = true;
+    buttonStopColorsChangeEl.disabled = false;
 }
 
 
@@ -25,6 +26,7 @@ function stopColorChange() {
     // console.log("Stop");
     clearInterval(timerId);
     buttonStartColorsChangeEl.disabled = false;
+    buttonStopColorsChangeEl.disabled= true;
 }
 
 

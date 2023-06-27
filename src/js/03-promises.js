@@ -42,6 +42,7 @@ formEl.addEventListener("submit", event => {
       });
     delay += step;
   }
+  formEl.reset();
 });
 
 // createPromise(2, 1500)
